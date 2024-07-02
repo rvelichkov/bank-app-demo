@@ -41,7 +41,7 @@ jobs:
       working-directory: ${{ env.WORKING_DIR }}
 
   terraform-apply:
-    requires: terraform-lint
+    needs: terraform-lint
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
