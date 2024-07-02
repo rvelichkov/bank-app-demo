@@ -1,4 +1,4 @@
-name: Terraform Infrastructure Deploy 
+ename: Terraform Infrastructure Deploy 
 
 on:
   push:
@@ -6,12 +6,12 @@ on:
       - master
     paths:
       - 'terraform/infrastructure/**'
-    pull-request:
-      branches:
-        - master
-      path: 
-        - 'terraform/infrastructure/**'
-    workflow_dispatch:
+  pull-request:
+    branches:
+      - master
+    path: 
+      - 'terraform/infrastructure/**'
+  workflow_dispatch:
 
 env:
   TF_VERSION: '1.6.6'
